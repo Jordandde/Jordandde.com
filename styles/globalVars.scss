@@ -1,0 +1,91 @@
+$color-peach: #ffdab9;
+$color-lilac: #dfd9e2;
+$color-violet: #c3acce;
+$color-faded: #89909f;
+$color-turqoise: #9ad1d4;
+$color-pink: #e4798a;
+
+
+@mixin global_container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+
+  font-family: "Avenir Next";
+  font-size: 4vh;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+@mixin card {
+  min-height: 40vh;
+  width: 40vw;
+
+  text-decoration: none;
+  border-radius: 5vh;
+  border: none;
+
+  display: flex;
+  position: relative;
+  opacity: 0.6;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 4rem;
+  padding: 5vh;
+
+  box-shadow: 0.2vh 0.4vh 0.5vh 0.6vh #c3acce;
+  color: #c3acce;
+
+  transition: 0.5s;
+
+  .description {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.25);
+  transition: 1s;
+    z-index: 2;
+    font-size: 3rem;
+    background:$color-faded;
+    color: $color-faded;
+    .description {
+      display: block;
+    }
+    .title {
+      display: none;
+    }
+  }
+}
+
+@mixin banner {
+  height: 19vh;
+  width: 100%;
+
+  color: #c3acce;
+
+
+  top: 0;
+  z-index: 1;
+
+  font-family: "Avenir Next";
+  font-size: 8vh;
+  font-style: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.FlexRow {
+  display: flex;
+}
+
+.FlexCol {
+  display: flex;
+  flex-direction: column;
+}

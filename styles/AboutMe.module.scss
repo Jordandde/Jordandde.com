@@ -1,0 +1,46 @@
+
+@use "./globalVars" as *;
+
+.Jordandde {
+  padding-left: 20px;
+  @media only screen and (max-width: 750px) {
+    display: none;
+  }
+}
+
+.container {
+    @include global_container;
+    background: linear-gradient(180deg, $color-lilac 10%, $color-violet 60%, $color-turqoise);
+  height: 275vh;
+  align-items: center;
+}
+
+.card {
+  @include card;
+  background: conic-gradient($color-violet, $color-lilac, $color-violet);
+  color: $color-pink;
+  font-size:3rem;
+  &:hover {
+    font-size: 2rem;
+    color: $color-peach;
+  }
+}
+
+.sticky_banner {
+  @include banner;
+  position: sticky;
+}
+
+.banner {
+  @include banner;
+  font-size:4vh;
+  color:$color-pink;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
