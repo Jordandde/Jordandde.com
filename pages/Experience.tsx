@@ -35,7 +35,7 @@ const Experience: NextPage = () => {
       </Head>
         <div className={styles.card} style={{marginRight: "30%", marginTop:"10%"}}>
           <div className={styles.title}>
-              OpenText <br/>Frontend Developer <br/>05/21 - 09/21 <br/> Nextjs, SCSS, Typescript, Rust, WASM
+              OpenText <br/>Frontend Developer <br/>05/21 - 09/21 <br/> Nextjs, SCSS, Typescript, Rust, WASM, Redux
           </div>
           <div className={styles.description}>
               At OpenText I worked as a frontend developer. Over the course of the term I greatly expanded the in-house SCSS library by developing and updating over 60 reuseable SCSS components.
@@ -54,22 +54,27 @@ const Experience: NextPage = () => {
         </div>
         <div className={styles.card} style={{marginRight: "30%", marginTop:"10%"}}>
           <div className={styles.title}>
-              OpenText <br/>Frontend Developer <br/>05/21 - 09/21 <br/> Nextjs, SCSS, Typescript, Rust, WASM
+              IBM <br/>Backend Developer <br/>01/20 - 04/20 <br/> Go, Ansible, NodeJS, Python, Kubernetes, REST APIs
           </div>
           <div className={styles.description}>
-              At OpenText I worked as a frontend developer. Over the course of the term I greatly expanded the in-house SCSS library by developing and updating over 60 reuseable SCSS components.
-              In addition to that I presented the changes I made to the various users of the library, and recorded the presentation so that future users will have a reference for anything they need to use from the library.
-              I also worked on the SLA reminder system, and implemented Redux in the reminder application so that we could store information more reliably. Finally, I led a team and created a collaborative text editor using Rust, Wasm and React
+            At IBM I worked as a backend developer. Over the term, I worked on a REST API, in Go, that was used to interface with the IBM cloud
+            and return information on the portals that were being hosted there. This API also allowed for the creation and deletion of portals
+             and proved to be especially useful for rebooting portals that would often fail. I also worked on the CLI. The CLI was written in Go and
+              had a terrible run time for all of it&apos;s applications due to needing to parse large chunks of data. Seeing this, I implemented multithreading
+              in the CLI by utilizing Goroutines and managed to reduce the average run time for the commands in the CLI from 60 seconds to 5 seconds without placing 
+              any noticeable stress on the machiene. Finally, I worked on updating the packages on the IBM remote servers, and added new packages to the servers. To orchestrate this,
+              I utilized Ansible and wrote the playbooks myself.
           </div>
         </div>
         <div className={styles.card} style={{marginLeft: "30%", marginTop:"10%"}}>
-        <div className={styles.title}>
-            Looking for an Internship
+          <div className={styles.title}>
+              Tugolo <br/>Fullstack Developer <br/>05/19 - 08/19 <br /> Go, PostgreSQL, ReactJS, Redux 
           </div>
           <div className={styles.description}>
-            I am currently looking for a coop position for winter 2022,
-              starting in January. If you have, or know of, any positions,
-              please contact me through email at jordandesouza5@gmail.com. My resume can be found by clicking on the resume card on my home page</div>
+            At Tugolo I worked as a fullstack developer. During the term, I was in charge of a lot of projects. My first one was to develop an internal React app that would allow admin users to accept or deny a seller from a list of sellers that wanted to offer their services on our site. After a decision was clicked on, the seller would be automatically emailed with the decision.
+            The next thing that I worked on is a password recovery system. Written in Go, the system takes in a user&apos;s email, queries the database, and emails the user if the key is in the database. This let the user reset the password, which would be replaced in the database.
+            Finally I worked on designing and developing a product review system with a Go backend and React frontend that used Redux for state manipulation. It allowed users to review items and would store the reviews in a PostgreSQL database. All reviews would be returned, paginated, when a user navigated to a product page and there are several filters that could be used to search for reviews. This relied simply on regex.
+          </div>
         </div>
     </div>
   )

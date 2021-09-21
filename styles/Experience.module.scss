@@ -17,13 +17,15 @@
 
 .card {
   @include card;
-  height: 100%;
+  min-height: 50vh;
+  max-height: 100vh;
   border: 10vh 10vw;
   background: conic-gradient($color-turqoise, $color-lilac , $color-turqoise);
   color: $color-pink;
   font-size:3rem;
   &:hover {
     font-size: 1rem;
+    z-index: 2;
     color: $color-peach;
   }
 }
