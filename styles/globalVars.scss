@@ -5,7 +5,27 @@ $color-faded: #89909f;
 $color-turqoise: #9ad1d4;
 $color-pink: #e4798a;
 
-
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../public/fonts/AvenirNextLTPro-It.otf");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../public/fonts/AvenirNextLTPro-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../public/fonts/AvenirNextLTPro-Bold.otf");
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+}
 @mixin global_container {
   display: flex;
   width: 100%;
@@ -34,6 +54,7 @@ $color-pink: #e4798a;
   justify-content: center;
   text-align: center;
   font-size: 4rem;
+  font-family: "Avenir Next";
   padding: 5vh;
 
   box-shadow: 0.2vh 0.4vh 0.5vh 0.6vh #c3acce;
