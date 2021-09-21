@@ -11,12 +11,14 @@
 .container {
     @include global_container;
     background: linear-gradient(180deg, $color-turqoise 10%, $color-lilac 60%, $color-peach);
-  height: 275vh;
+  min-height: 350vh;
   align-items: center;
 }
 
 .card {
   @include card;
+  height: 100%;
+  border: 10vh 10vw;
   background: conic-gradient($color-turqoise, $color-lilac , $color-turqoise);
   color: $color-pink;
   font-size:3rem;
