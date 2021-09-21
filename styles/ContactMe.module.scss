@@ -10,21 +10,23 @@
 
 .container {
     @include global_container;
-    background: linear-gradient(180deg, $color-turqoise 10%, $color-lilac 60%, $color-peach);
-  min-height: 350vh;
+    background: linear-gradient(180deg, $color-lilac 10%, $color-violet 60%, $color-turqoise);
+  height: 200vh;
   align-items: center;
 }
 
 .card {
   @include card;
-  min-height: 50vh;
-  max-height: 100vh;
-  border: 10vh 10vw;
-  background: conic-gradient($color-turqoise, $color-lilac , $color-turqoise);
+  background: conic-gradient($color-violet, $color-lilac, $color-violet);
   color: $color-pink;
-  font-size:3rem;
+  width: 20vw;
+  height: 20vh;
+  font-size:2rem;
+  margin: 10vh 10vw;
   &:hover {
-    font-size: 1rem;
+    font-size: 2rem;
+    color: $color-peach;
+    transform: none;
   }
 }
 

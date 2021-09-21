@@ -61,7 +61,7 @@ $color-pink: #e4798a;
   box-shadow: 0.2vh 0.4vh 0.5vh 0.6vh #c3acce;
   color: #c3acce;
 
-  transition: 0.5s;
+  transition: 1s;
 
   .description {
     display: none;
@@ -73,8 +73,9 @@ $color-pink: #e4798a;
   transition: 1s;
     z-index: 2;
     font-size: 3rem;
+    cursor: pointer;
     background:$color-faded;
-    color: $color-faded;
+    color: $color-peach;
     .description {
       display: block;
     }

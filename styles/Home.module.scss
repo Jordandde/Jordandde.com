@@ -19,9 +19,6 @@
   @include card;
   background: conic-gradient($color-peach,$color-lilac,$color-peach);
   color: $color-violet;
-  &:hover {
-    color: $color-peach;
-  }
 }
 
 .sticky_banner {

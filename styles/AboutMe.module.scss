@@ -11,7 +11,7 @@
 .container {
     @include global_container;
     background: linear-gradient(180deg, $color-lilac 10%, $color-violet 60%, $color-turqoise);
-  height: 275vh;
+  height: 325vh;
   align-items: center;
 }
 

@@ -100,7 +100,16 @@ const Home: NextPage = () => {
           </div>
         </div>
         </Link>
-        <div className={styles.card} style={{marginLeft: "30%", marginTop:"10%"}}>Resume</div>
+        <Link href="ContactMe" passHref>
+        <div className={styles.card} style={{marginLeft: "30%", marginTop:"10%"}}>
+          <div className={styles.title}>
+                Links and Resume
+          </div>
+          <div className={styles.description}>
+                Click here for my external links and Resume
+          </div>
+        </div>
+        </Link>
     </div>
   )
 }
