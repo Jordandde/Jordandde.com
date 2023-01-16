@@ -1,1 +1,1 @@
-A simple website made by me using Nextjs and SCSS to showcase some information about myself. Will be using this for futurer project showcases
+A simple website made by me using Nextjs and SCSS to showcase some information about myself. Will be using this for future project showcases. Note this is now an experimental website repo I will be using to test things out, my current website uses a simpler template rather than this repo.
